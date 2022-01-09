@@ -6,7 +6,7 @@ const SampleComponent = () => {
   const [count, setCount] = useState(INITIAL_COUNT);
 
   const callbackFunction = () => {
-    document.title = "${count} 回クリックされました";
+    document.title = count + " 回クリックされました";
   };
   useEffect(callbackFunction, [count]);
 
